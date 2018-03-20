@@ -1,0 +1,50 @@
+ <?php
+Class dbConnect {
+ 
+private  $server = "mysql:host=localhost;dbname=assignment_jquery";
+ 
+private  $user = "root";
+ 
+private  $pass = "root";
+ 
+private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
+ 
+protected $con;
+ 
+        /*Function for opening connection*/
+
+            public function openConnection()
+ 
+            {
+ 
+               try
+ 
+                 {
+ 
+            $this->con = new PDO($this->server, $this->user,$this->pass,$this->options);
+            //  $this->con =setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
+ 
+            return $this->con;
+             
+                  }
+ 
+               catch (PDOException $e)
+ 
+                 {
+ 
+                     echo "There is some problem in connection: " . $e->getMessage();
+ 
+                 }
+ 
+            }
+            
+        /*Function for closing connection*/
+
+            public function closeConnection() {
+             
+                $this->con = null;
+             
+                }
+ 
+}
+?> 

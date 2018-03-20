@@ -1,0 +1,55 @@
+p {
+color: red;
+text-align: center;
+}
+
+form{
+padding:  10px;
+} 
+
+.well {
+background-color: #70dbdb !important;
+}
+
+.bg-light{
+background-color: #61605a !important ;
+}
+
+nav{
+padding :  10px !important;
+}
+
+body {
+background-color: #fff2e6;
+}
+
+.right{
+display: inline;
+float: right !important;
+text-align: right !important;
+}
+
+.msg{
+font-size: 12px; 
+padding: 3px;
+background: #EDEDED;
+border: 1px so
+}
+
+.wrapper{
+margin: 60px auto;
+text-align: center;
+}
+#pagination-demo{
+display: inline-block;
+margin-bottom: 1.75em;
+}
+#pagination-demo li{
+display: inline-block;
+}
+
+
+ tr:nth-child(odd){
+  background-color: #666;
+  color: white;
+}
